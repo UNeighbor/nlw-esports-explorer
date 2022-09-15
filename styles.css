@@ -47,7 +47,7 @@ header div {
 
     transition: transform .3s;
 
-    animation: fromTop .6s .6s backwards;
+    animation: fromTop .6s .3s backwards;
 }
 
 header div:hover {
