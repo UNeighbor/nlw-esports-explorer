@@ -27,5 +27,5 @@ With an intensive week inside the Next Level Week event promoted by Rocketseat, 
 
 andredirval2701@gmail.com
 
-https://www.linkedin.com/in/andré-alves-609a18213
+https://www.linkedin.com/in/andrealves27
 
