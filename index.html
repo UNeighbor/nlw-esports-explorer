@@ -5,12 +5,13 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https: //fonts.googleapis.com/css2? família= Inter:wght@400;900 & display=swap" rel="stylesheet">       
-
+        
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>NLW eSports</title>
 
         <link rel="stylesheet" href="./styles.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
 
     </head>
     <body>
@@ -30,58 +31,60 @@
                     <h2>Meus Jogos</h2>
                     <p>Os games que eu mais curto jogar!</p>
                     
-                    <ul class="game-list">
-                        <li>
-                            <a
-                            target="_blank"
-                            href="https://www.twitch.tv/directory/game/League%20of%20Legends">
-                                <img 
-                                    src="https://static-cdn.jtvnw.net/ttv-boxart/21779-188x250.jpg" 
-                                    alt="Imagem do jogo League of Legends">
-                            </a>
-                        </li>
+                    <div class="swiper mySwiper">
+                        <ul class="game-list swiper-wrapper class="swiper-slide"">
+                            <li class="swiper-slide">
+                                <a
+                                target="_blank"
+                                href="https://www.twitch.tv/directory/game/League%20of%20Legends">
+                                    <img 
+                                        src="https://static-cdn.jtvnw.net/ttv-boxart/21779-188x250.jpg" 
+                                        alt="Imagem do jogo League of Legends">
+                                </a>
+                            </li>
 
-                        <li>
-                            <a
-                            target="_blank"
-                            href="https://www.twitch.tv/directory/game/Fortnite">
-                                <img 
-                                    src="https://static-cdn.jtvnw.net/ttv-boxart/33214-188x250.jpg" 
-                                    alt="Imagem do jogo Fortnite">
-                            </a>
-                        </li>
+                            <li class="swiper-slide">
+                                <a
+                                target="_blank"
+                                href="https://www.twitch.tv/directory/game/Fortnite">
+                                    <img 
+                                        src="https://static-cdn.jtvnw.net/ttv-boxart/33214-188x250.jpg" 
+                                        alt="Imagem do jogo Fortnite">
+                                </a>
+                            </li>
 
-                        <li>
-                            <a
-                            target="_blank"
-                            href="https://www.twitch.tv/directory/game/Grand%20Theft%20Auto%20V">
-                                <img 
-                                    src="https://static-cdn.jtvnw.net/ttv-boxart/32982_IGDB-188x250.jpg" 
-                                    alt="Imagem do jogo Grand Theft Auto V">
-                            </a>
-                        </li>
+                            <li class="swiper-slide">
+                                <a
+                                target="_blank"
+                                href="https://www.twitch.tv/directory/game/Grand%20Theft%20Auto%20V">
+                                    <img 
+                                        src="https://static-cdn.jtvnw.net/ttv-boxart/32982_IGDB-188x250.jpg" 
+                                        alt="Imagem do jogo Grand Theft Auto V">
+                                </a>
+                            </li>
 
-                        <li>
-                            <a
-                            target="_blank"
-                            href="https://www.twitch.tv/directory/game/Red%20Dead%20Redemption%202">
-                                <img 
-                                    src="https://static-cdn.jtvnw.net/ttv-boxart/493959_IGDB-188x250.jpg" 
-                                    alt="Imagem do jogo Red Dead Redemption 2">
-                            </a>
-                        </li>
-                        
-                        <li>
-                            <a
-                            target="_blank"
-                            href="https://www.twitch.tv/directory/game/Marvel's%20Spider-Man%20Remastered">
-                                <img 
-                                    src="https://static-cdn.jtvnw.net/ttv-boxart/1262047844_IGDB-188x250.jpg" 
-                                    alt="Imagem do jogo Spider- Man">
-                            </a>
-                        </li>
+                            <li class="swiper-slide">
+                                <a
+                                target="_blank"
+                                href="https://www.twitch.tv/directory/game/Red%20Dead%20Redemption%202">
+                                    <img 
+                                        src="https://static-cdn.jtvnw.net/ttv-boxart/493959_IGDB-188x250.jpg" 
+                                        alt="Imagem do jogo Red Dead Redemption 2">
+                                </a>
+                            </li>
+                            
+                            <li class="swiper-slide">
+                                <a
+                                target="_blank"
+                                href="https://www.twitch.tv/directory/game/Marvel's%20Spider-Man%20Remastered">
+                                    <img 
+                                        src="https://static-cdn.jtvnw.net/ttv-boxart/1262047844_IGDB-188x250.jpg" 
+                                        alt="Imagem do jogo Spider- Man">
+                                </a>
+                            </li>
 
-                    </ul>
+                        </ul>
+                    </div>
                 </div>
             </section>
 
@@ -220,5 +223,17 @@
             
         </footer>
 
+        <!-- Swiper JS -->
+        <script 
+            src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js">
+        </script>
+
+        <!-- Initialize Swiper -->
+        <script>
+            new Swiper(".mySwiper", {
+                slidePerView: 3,
+                loop: true
+            });
+        </script>
     </body>
 </html>
